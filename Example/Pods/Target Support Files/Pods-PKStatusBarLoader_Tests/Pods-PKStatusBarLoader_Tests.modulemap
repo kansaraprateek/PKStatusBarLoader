@@ -1,0 +1,6 @@
+framework module Pods_PKStatusBarLoader_Tests {
+  umbrella header "Pods-PKStatusBarLoader_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,23 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - PKStatusBarLoader (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - PKStatusBarLoader (from `../`)
+
+EXTERNAL SOURCES:
+  PKStatusBarLoader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  PKStatusBarLoader: df2e2359a303d661b64d4021bca99d47546f2502
+
+PODFILE CHECKSUM: 0126d0beb074f0087f7a36f89926a9d4f5613a48
+
+COCOAPODS: 1.1.1

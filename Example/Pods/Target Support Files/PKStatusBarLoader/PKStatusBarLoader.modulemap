@@ -1,0 +1,6 @@
+framework module PKStatusBarLoader {
+  umbrella header "PKStatusBarLoader-umbrella.h"
+
+  export *
+  module * { export * }
+}
