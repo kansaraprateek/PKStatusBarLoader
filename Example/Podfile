@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PKStatusBarLoader_Example' do
+  pod 'PKStatusBarLoader', :path => '../'
+
+  target 'PKStatusBarLoader_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
