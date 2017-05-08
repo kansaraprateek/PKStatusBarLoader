@@ -26,7 +26,7 @@ import PKStatusBarLoader
 
 ```
 
-//How To Use
+// How To Use
 
 ```ruby
 
@@ -38,6 +38,18 @@ PKStatusBarLoader.show(withMessage: "Yayyy")
 
 // Dismiss status bar
 PKStatusBarLoader.dismiss()
+
+```
+
+// Update UI Elements with [String : Any] object. Call
+
+```ruby
+PKStatusBarLoader.setupLoaderUI(data: [
+    kPKStatusBarLoaderBKGColor : UIColor.black,
+    kPKStatusBarLoaderHeaderTextFont : UIFont.init(name: <Font_Name>, size: 10.0),
+    kPKStatusBarLoaderHeaderTextColor : UIColor.white,
+    kPKStatusBarLoaderHeaderTextBKGColor : UIColor.clear
+])
 
 ```
 
