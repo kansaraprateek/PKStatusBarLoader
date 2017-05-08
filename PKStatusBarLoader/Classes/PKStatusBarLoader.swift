@@ -40,6 +40,10 @@ public class PKStatusBarLoader: UIWindow {
         statusBar.setupLabelAndActivityIndicator()
     }
     
+    public class func setDefaultFont(){
+        
+    }
+    
     init() {
         let screen = UIScreen.main.bounds
         super.init(frame: CGRect(x: 0, y: 0, width: screen.width, height: 0))
