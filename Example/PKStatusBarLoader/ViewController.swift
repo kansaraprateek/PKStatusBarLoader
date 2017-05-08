@@ -18,8 +18,12 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        PKStatusBarLoader.setBackgroundColor(color: UIColor.orange)
+        
         PKStatusBarLoader.show(withMessage: "Yayyy")
+        
+        PKStatusBarLoader.setupLoaderUI(data: [
+            kPKStatusBarLoaderBKGColor : UIColor.orange
+            ])
         
         perform(#selector(self.showAnotherMessage), with: nil, afterDelay: 3.0)
     }

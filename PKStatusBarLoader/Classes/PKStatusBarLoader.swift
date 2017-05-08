@@ -19,8 +19,16 @@ public class PKStatusBarLoader: UIWindow {
     
     var gMessage : String? = ""
     
-    public class func setBackgroundColor(color : UIColor){
-        statusBar.backgroundColor = color
+    var defaultUIData = [
+        kPKStatusBarLoaderBKGColor : PKStatusLoaderConstant().headerBKGColor,
+        kPKStatusBarLoaderHeaderTextFont : PKStatusLoaderConstant().messageFont!,
+        kPKStatusBarLoaderHeaderTextColor : PKStatusLoaderConstant().messageTextColor,
+        kPKStatusBarLoaderHeaderTextBKGColor : PKStatusLoaderConstant().messageTextBKG
+        ] as [String : Any]
+    
+    
+    public class func setupLoaderUI(data : [String: Any]){
+        statusBar.setupUI(data: data)
     }
     
     public class func show(withMessage : String) {
@@ -40,10 +48,6 @@ public class PKStatusBarLoader: UIWindow {
         statusBar.setupLabelAndActivityIndicator()
     }
     
-    public class func setDefaultFont(){
-        
-    }
-    
     init() {
         let screen = UIScreen.main.bounds
         super.init(frame: CGRect(x: 0, y: 0, width: screen.width, height: 0))
@@ -54,14 +58,32 @@ public class PKStatusBarLoader: UIWindow {
     
     private func initializeViews(){
         
+        self.messageLabel?.removeFromSuperview()
         self.messageLabel = UILabel()
         self.addSubview(self.messageLabel!)
-        self.messageLabel?.textColor = UIColor.white
-        self.messageLabel?.font = PKStatusLoaderConstant().messageFont
+        self.updateUIElements()
+    }
+    
+    private func updateUIElements(){
+        self.messageLabel?.textColor = defaultUIData[kPKStatusBarLoaderHeaderTextColor] as! UIColor
+        self.messageLabel?.backgroundColor = defaultUIData[kPKStatusBarLoaderHeaderTextBKGColor] as? UIColor
+        self.messageLabel?.font = defaultUIData[kPKStatusBarLoaderHeaderTextFont] as! UIFont
+        self.backgroundColor = defaultUIData[kPKStatusBarLoaderBKGColor] as? UIColor
     }
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupUI(data : [String: Any]?){
+        let keys = data?.keys
+        if keys != nil{
+            for key in keys!{
+                defaultUIData[key] = data?[key]
+            }
+        }
+        
+        self.updateUIElements()
     }
     
     private func showStatusMessage(animating : Bool) {
@@ -122,5 +144,15 @@ class PKStatusLoaderConstant: NSObject {
     let activityIndicatorSize : CGFloat = 15
     let messageEdgeMargin : CGFloat = 10
     let messageAndActivityDiff : CGFloat = 5
+    
     let messageFont = UIFont.init(name: "AvenirNext-Medium", size: 10.0)
+    let messageTextColor = UIColor.white
+    let messageTextBKG = UIColor.clear
+    let headerBKGColor = UIColor.black
+    
 }
+
+public let kPKStatusBarLoaderBKGColor = "kPKStatusBarLoaderBKGColor"
+public let kPKStatusBarLoaderHeaderTextFont = "kPKStatusBarLoaderHeaderTextFont"
+public let kPKStatusBarLoaderHeaderTextColor = "kPKStatusBarLoaderHeaderTextColor"
+public let kPKStatusBarLoaderHeaderTextBKGColor = "kPKStatusBarLoaderHeaderTextBKGColor"
