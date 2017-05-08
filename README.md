@@ -20,6 +20,27 @@ it, simply add the following line to your Podfile:
 pod "PKStatusBarLoader"
 ```
 
+```ruby
+
+import PKStatusBarLoader
+
+```
+
+//How To Use
+
+```ruby
+
+// Set the background Color
+PKStatusBarLoader.setBackgroundColor(color: UIColor.orange)
+
+// Set header Message
+PKStatusBarLoader.show(withMessage: "Yayyy")
+
+// Dismiss status bar
+PKStatusBarLoader.dismiss()
+
+```
+
 ## Author
 
 kansaraprateek, prateek@tagrem.com
