@@ -89,14 +89,16 @@ public class PKStatusBarLoader: UIWindow {
     private func showStatusMessage(animating : Bool) {
         
         self.messageLabel?.text = self.gMessage
-        self.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 0)
-        DispatchQueue.main.async(execute: {
-            self.isHidden = false
-            UIView.animate(withDuration: 0.5, animations: {
-                self.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 20)
-                
+        self.messageLabel?.isHidden = false
+        if self.isHidden{
+            self.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 0)
+            DispatchQueue.main.async(execute: {
+                self.isHidden = false
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 20)
+                })
             })
-        })
+        }
     }
     
     private func setupLabelAndActivityIndicator(){
@@ -127,6 +129,7 @@ public class PKStatusBarLoader: UIWindow {
     }
     
     private func removeStatusWindow(){
+        self.messageLabel?.isHidden = true
         self.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 20)
         DispatchQueue.main.async(execute: {
             UIView.animate(withDuration: 0.5, animations: {
