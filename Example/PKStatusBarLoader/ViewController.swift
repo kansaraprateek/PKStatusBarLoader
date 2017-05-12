@@ -19,6 +19,24 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        
+    }
+    
+    func showAnotherMessage() {
+        PKStatusBarLoader.show(withMessage: "Another Message!!!!!")
+//        perform(#selector(self.dismissStatus), with: nil, afterDelay: 3.0)
+    }
+    
+    func dismissStatus() {
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func showStatusBar(sender : UIButton) {
         PKStatusBarLoader.show(withMessage: "Yayyy")
         
         PKStatusBarLoader.setupLoaderUI(data: [
@@ -28,19 +46,9 @@ class ViewController: UIViewController {
         perform(#selector(self.showAnotherMessage), with: nil, afterDelay: 3.0)
     }
     
-    func showAnotherMessage() {
-        PKStatusBarLoader.show(withMessage: "Another Message!!!!!")
-//        perform(#selector(self.dismissStatus), with: nil, afterDelay: 3.0)
-    }
-    
-    func dismissStatus() {
+    @IBAction func hideStatusBar(sender : UIButton) {
         PKStatusBarLoader.dismiss()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 

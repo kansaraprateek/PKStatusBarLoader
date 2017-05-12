@@ -9,6 +9,10 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Screenshots
+
+<img src="http://www.prateekkansara.com/GitProjectImages/PKStatusBarLoader/PKStatusBar.gif" width="320" height="508"></img> 
+
 ## Requirements
 
 ## Installation
