@@ -11,7 +11,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Screenshots
 
-<img src="http://www.prateekkansara.com/GitProjectImages/PKStatusBarLoader/PKStatusBar.gif" width="320" height="508"></img> 
+<img src="http://www.prateekkansara.com/GitProjectImages/PKStatusBarLoader/PKStatusBar.gif" width="480" height="508"></img> 
 
 ## Requirements
 
