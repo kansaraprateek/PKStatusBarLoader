@@ -48,9 +48,15 @@ public class PKStatusBarLoader: UIWindow {
         statusBar.setupLabelAndActivityIndicator()
     }
     
+    private var y : CGFloat = 0
+    private var height : CGFloat = 20
     init() {
         let screen = UIScreen.main.bounds
-        super.init(frame: CGRect(x: 0, y: 0, width: screen.width, height: 0))
+        if screen.height > 800 && UIDevice.current.userInterfaceIdiom == .phone{
+            height = 50
+        }
+        
+        super.init(frame: CGRect(x: 0, y: y, width: screen.width, height: 0))
         
         self.windowLevel = UIWindowLevelStatusBar+1
         self.initializeViews()
@@ -95,7 +101,7 @@ public class PKStatusBarLoader: UIWindow {
             DispatchQueue.main.async(execute: {
                 self.isHidden = false
                 UIView.animate(withDuration: 0.5, animations: {
-                    self.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 20)
+                    self.frame = CGRect(x: 0, y: self.y, width: self.frame.width, height: self.height)
                 })
             })
         }
@@ -109,14 +115,14 @@ public class PKStatusBarLoader: UIWindow {
         }
         let availableWidth = self.frame.width - (PKStatusLoaderConstant().messageEdgeMargin * 2) - activtiySize //(update with activity size)
         
-        self.messageLabel?.frame = CGRect(x: (self.frame.width/2) - (messageLength.width/2), y: 0, width: messageLength.width, height: 20)
+        self.messageLabel?.frame = CGRect(x: (self.frame.width/2) - (messageLength.width/2), y: self.height-20, width: messageLength.width, height: 20)
         if messageLength.width > availableWidth{
-            self.messageLabel?.frame = CGRect(x: 0, y: 0, width: (self.frame.width/2) - (availableWidth/2), height: 20)
+            self.messageLabel?.frame = CGRect(x: 0, y: self.height-20, width: (self.frame.width/2) - (availableWidth/2), height: 20)
         }
         
         if isActivityIndicatorShown{
             self.activityIndicator?.removeFromSuperview()
-            self.activityIndicator = UIActivityIndicatorView.init(frame: CGRect(x: (self.messageLabel?.frame.origin.x)! - activtiySize, y : 2.5, width: PKStatusLoaderConstant().activityIndicatorSize, height : PKStatusLoaderConstant().activityIndicatorSize))
+            self.activityIndicator = UIActivityIndicatorView.init(frame: CGRect(x: (self.messageLabel?.frame.origin.x)! - activtiySize, y : self.height-PKStatusLoaderConstant().activityIndicatorSize - 2.5, width: PKStatusLoaderConstant().activityIndicatorSize, height : PKStatusLoaderConstant().activityIndicatorSize))
             self.activityIndicator?.startAnimating()
             self.activityIndicator?.transform = CGAffineTransform.init(scaleX: 0.5 , y: 0.5)
             self.addSubview(self.activityIndicator!)
@@ -130,7 +136,7 @@ public class PKStatusBarLoader: UIWindow {
     
     private func removeStatusWindow(){
         self.messageLabel?.isHidden = true
-        self.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 20)
+        self.frame = CGRect(x: 0, y: y, width: self.frame.width, height: height)
         DispatchQueue.main.async(execute: {
             UIView.animate(withDuration: 0.5, animations: {
                 self.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 0)
