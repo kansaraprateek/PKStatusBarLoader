@@ -30,9 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32216E819540A25CE61622A0644D0F6D /* PKStatusBarLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PKStatusBarLoader.framework; path = PKStatusBarLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32216E819540A25CE61622A0644D0F6D /* PKStatusBarLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PKStatusBarLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB2FA0673B5CD7D7D5A1734E440C4FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		401452F8972E09225C8ACFC27976A086 /* Pods-PKStatusBarLoader_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PKStatusBarLoader_Tests.modulemap"; sourceTree = "<group>"; };
+		401452F8972E09225C8ACFC27976A086 /* Pods-PKStatusBarLoader_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PKStatusBarLoader_Tests.modulemap"; sourceTree = "<group>"; };
 		4C7567335CC7C4EC0AD74F1F6A09FADD /* PKStatusBarLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKStatusBarLoader-umbrella.h"; sourceTree = "<group>"; };
 		4E5292E4138DBE1F62F3DD46D4742A70 /* Pods-PKStatusBarLoader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PKStatusBarLoader_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4FCBCC4D4B6BA724878575BAA49373A7 /* Pods-PKStatusBarLoader_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PKStatusBarLoader_Example-dummy.m"; sourceTree = "<group>"; };
@@ -44,23 +44,23 @@
 		709CCAF8453FC09AFB4D784EB32C533C /* Pods-PKStatusBarLoader_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PKStatusBarLoader_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		76E2EC36F6142AEB88E2FF37E058F2F4 /* Pods-PKStatusBarLoader_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PKStatusBarLoader_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7BAE4F883B16FE1D1CF15188CD758FFB /* Pods-PKStatusBarLoader_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PKStatusBarLoader_Example-resources.sh"; sourceTree = "<group>"; };
-		7FCDB4277003EBCA8A4BE37B4A7537F6 /* Pods-PKStatusBarLoader_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PKStatusBarLoader_Example.modulemap"; sourceTree = "<group>"; };
+		7FCDB4277003EBCA8A4BE37B4A7537F6 /* Pods-PKStatusBarLoader_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PKStatusBarLoader_Example.modulemap"; sourceTree = "<group>"; };
 		8194374C03DF302385113AC1F76F9815 /* Pods-PKStatusBarLoader_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PKStatusBarLoader_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		8635387817F2E78BCBF54CFB0A25576E /* PKStatusBarLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PKStatusBarLoader.modulemap; sourceTree = "<group>"; };
+		8635387817F2E78BCBF54CFB0A25576E /* PKStatusBarLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PKStatusBarLoader.modulemap; sourceTree = "<group>"; };
 		8944E52889AF2828982E63E6C3DE2E2C /* PKStatusBarLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKStatusBarLoader.xcconfig; sourceTree = "<group>"; };
 		8BE47F91FF373E37827FF63787976D44 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		922284904CA126E89A85229D5312F873 /* Pods-PKStatusBarLoader_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PKStatusBarLoader_Tests-resources.sh"; sourceTree = "<group>"; };
 		923BE98F63BBA9D6D75EC02563570755 /* PKStatusBarLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PKStatusBarLoader.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		998A6945DAFED7DBC5A7D130431C2C17 /* Pods-PKStatusBarLoader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PKStatusBarLoader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A80C2A828E5EC1180A8872035E14CC94 /* PKStatusBarLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PKStatusBarLoader-dummy.m"; sourceTree = "<group>"; };
-		B6FC93C204B87D0E79C89D8B986340B2 /* Pods_PKStatusBarLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PKStatusBarLoader_Tests.framework; path = "Pods-PKStatusBarLoader_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6FC93C204B87D0E79C89D8B986340B2 /* Pods_PKStatusBarLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PKStatusBarLoader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C761340B8B44F0703F898A5566D3C0 /* PKStatusBarLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKStatusBarLoader-prefix.pch"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D003EE5AE3850539B3D8022B4D76CB09 /* Pods-PKStatusBarLoader_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PKStatusBarLoader_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D6C774B4756F94CBFBADF466381D7A5F /* Pods-PKStatusBarLoader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PKStatusBarLoader_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E78418EAC73141CBCC49183106371E82 /* Pods-PKStatusBarLoader_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PKStatusBarLoader_Example-umbrella.h"; sourceTree = "<group>"; };
-		ECD2136000EFFE677F31F1DFC0A0F19D /* Pods_PKStatusBarLoader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PKStatusBarLoader_Example.framework; path = "Pods-PKStatusBarLoader_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD2136000EFFE677F31F1DFC0A0F19D /* Pods_PKStatusBarLoader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PKStatusBarLoader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F190204A8F70F53C06C14B52AD55B197 /* Pods-PKStatusBarLoader_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PKStatusBarLoader_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +106,6 @@
 			children = (
 				923BE98F63BBA9D6D75EC02563570755 /* PKStatusBarLoader.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -212,7 +211,6 @@
 			children = (
 				24C13E474A423181621AB3A0F9FD3753 /* Classes */,
 			);
-			name = PKStatusBarLoader;
 			path = PKStatusBarLoader;
 			sourceTree = "<group>";
 		};
@@ -314,6 +312,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					267C195A05720933CB8C682CF5AC8828 = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -512,7 +515,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -584,7 +588,8 @@
 				PRODUCT_NAME = PKStatusBarLoader;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

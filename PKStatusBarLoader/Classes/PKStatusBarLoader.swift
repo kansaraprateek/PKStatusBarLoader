@@ -130,8 +130,8 @@ public class PKStatusBarLoader: UIWindow {
     }
     
     private func getMessageSize() -> CGSize{
-        let fontAttribute : [String: Any] = [NSFontAttributeName : PKStatusLoaderConstant().messageFont!]
-        return (self.gMessage! as NSString).size(attributes: fontAttribute)
+        let fontAttribute : [NSAttributedStringKey: Any] = [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue) : PKStatusLoaderConstant().messageFont!]
+        return (self.gMessage! as NSString).size(withAttributes: fontAttribute)
     }
     
     private func removeStatusWindow(){

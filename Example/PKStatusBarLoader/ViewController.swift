@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
     }
     
-    func showAnotherMessage() {
+    @objc func showAnotherMessage() {
         PKStatusBarLoader.show(withMessage: "Another Message!!!!!")
 //        perform(#selector(self.dismissStatus), with: nil, afterDelay: 3.0)
     }
