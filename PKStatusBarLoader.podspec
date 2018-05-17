@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PKStatusBarLoader'
-  s.version          = '0.0.6'
+  s.version          = '2.0'
   s.summary          = 'Status bar loading view with custom message and activity Indicator.'
 
 # This description is used to generate tags and improve search results.
